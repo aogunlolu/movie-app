@@ -56,8 +56,8 @@ const url = 'https://api.themoviedb.org/3'
                 <img src={`${imgPath}${result.backdrop_path}`} alt={result.backdrop_path} />
               </div>
               <div className='card_cont'>
-              <h4>{result.title} {result.name}</h4> 
-              <p>{result.vote_average}</p>    
+              <p>{result.vote_average}</p>  
+              <h4>{result.title} {result.name}</h4>     
               <p>{result.release_date} {result.first_air_date}</p>  
               </div> 
               </SplideSlide> 

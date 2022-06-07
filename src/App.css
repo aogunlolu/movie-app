@@ -137,7 +137,7 @@ form{
 
 .card{
   width: 170px;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
   border-radius: 1rem;
   
@@ -191,8 +191,4 @@ form{
 .options h4{
   padding: 0 13px;
 
-}
-.search_card{
-  display: flex;
-  padding: 30px 120px;
 }

@@ -5,6 +5,7 @@ import { imgPath } from '../img';
 import {MdFavorite, MdDashboardCustomize, MdWatchLater} from 'react-icons/md';
 import { CgAsterisk} from 'react-icons/cg';
 import { BiPlayCircle} from 'react-icons/bi';
+import styled from "styled-components"
 
   function Search () {
     const [searched, setSearched] = useState([]);
@@ -36,7 +37,7 @@ import { BiPlayCircle} from 'react-icons/bi';
     <>
           {searched.map((result) => {
             return(
-              <div className='search_card' key={result.id}>
+              <Grid className='search_card' key={result.id}>
               <div className='card' >
                 <img src={`${imgPath}${result.poster_path}`} alt={result.poster_path} />
               </div>
@@ -54,13 +55,18 @@ import { BiPlayCircle} from 'react-icons/bi';
                 <p>{result.release_date}</p>
                 
               </div> 
-              </div> 
+              </Grid> 
             )
           })}
     </>
   )
 }
 
+const Grid = styled.div`
+display: flex;
+padding: 30px 120px;
+grid-gap: 30px
 
+`;
 
 export default Search
